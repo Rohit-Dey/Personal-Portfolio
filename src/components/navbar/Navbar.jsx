@@ -15,7 +15,7 @@ const Navbar = () => {
                 </motion.span>
                 <div className='social'>
                     <a href=''><img src='/instagram.png'></img></a>
-                    <a href=''><img src='/linkedin.png'></img></a>
+                    <a href='https://www.linkedin.com/in/rohit-dey-1432ardie/'><img src='/linkedin.png'></img></a>
                 </div>
             </div>
         </div>

@@ -1,6 +1,7 @@
 import './app.scss'
 import MyImg from './components/MyImg/MyImg';
 import Navbar from './components/navbar/Navbar';
+import Parallax from './components/parallax/Parallax';
 
 const App = () => {
   return <div>
@@ -8,9 +9,9 @@ const App = () => {
       <Navbar />
       <MyImg />
     </section>
-    <section id='Skills'>Parallax</section>
-    <section>Services</section>
-    <section id='Portfolio'>Parallax</section>
+    <section id='Skills'><Parallax type='Skills'/></section>
+    <section>Skills</section>
+    <section id='Portfolio'><Parallax type='Portfolio'/></section>
     <section>Portfolio1</section>
     <section>Portfolio2</section>
     <section id='Contact'>Contact</section>
