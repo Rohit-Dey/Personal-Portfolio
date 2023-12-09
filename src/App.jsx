@@ -2,6 +2,7 @@ import './app.scss'
 import MyImg from './components/MyImg/MyImg';
 import Navbar from './components/navbar/Navbar';
 import Parallax from './components/parallax/Parallax';
+import Portfolio from './components/portfolio/Portfolio';
 import Skills from './components/skills/Skills';
 
 const App = () => {
@@ -13,8 +14,7 @@ const App = () => {
     <section id='Skills'><Parallax type='Skills'/></section>
     <section><Skills /></section>
     <section id='Portfolio'><Parallax type='Portfolio'/></section>
-    <section>Portfolio1</section>
-    <section>Portfolio2</section>
+    <Portfolio />
     <section id='Contact'>Contact</section>
   </div>;
 };
