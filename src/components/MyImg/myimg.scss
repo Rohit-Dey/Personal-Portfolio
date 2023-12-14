@@ -1,39 +1,55 @@
+@import '../../app.scss';
+
 .my-img {
-    height: calc(100vh - 100px);
+    height: 100vh;
     background: linear-gradient(180deg, #0c0c1d, #111132);
     overflow: hidden;
     position: relative;
 
-    .wrapper{
+    .wrapper {
         max-width: 1366px;
         height: 100%;
         margin: auto;
 
-        .text-container{
-            width: 50% ;
+        .text-container {
+            width: 50%;
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             gap: 40px;
 
-            h2{
+            @include mobile {
+                height: 50%;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+                text-align: center;
+            }
+
+            h2 {
                 font-size: 30px;
                 color: #C683D7;
                 letter-spacing: 10px;
             }
-            
-            h1{
+
+            h1 {
                 font-size: 88px;
                 color: #F7FBFC;
 
                 span {
                     color: #FFF700;
                 }
+
+                @include mobile {
+                    font-size: 36px;
+                }
             }
 
-            .buttons{
-                button{
+            .buttons {
+                z-index: 999;
+
+                button {
                     padding: 20px;
                     border: 1px solid white;
                     border-radius: 10px;
@@ -43,35 +59,71 @@
                     cursor: pointer;
                     font-weight: 300;
                 }
+
+                .resume {
+                    z-index: 999;
+                    background: hsla(271, 100%, 50%, 1);
+                    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+                    height: 100%;
+                    width: 40%;
+                    font-size: 20px;
+                    font-weight: bold;
+
+                    @include mobile {
+                        margin: 10px 0;
+                        padding: 10px 0;
+                        height: 40%;
+                        width: 50%;
+                        font-size: 14px;
+                    }
+                }
             }
 
-            img{
+            img {
                 width: 50px;
             }
 
-            .google{
+            .google {
                 margin-top: -15%;
                 width: 100%;
                 margin-bottom: -10%;
+
+                @include mobile {
+                    top: unset;
+                    width: 70%;
+                }
             }
         }
     }
 
-    .image-container{
+    .image-container {
         height: 100%;
         position: absolute;
         top: 0%;
         right: 0;
         margin-right: -12%;
-        
-        img{
+
+        @include mobile {
+            height: 50%;
+            width: 100%;
+            top: unset;
+            bottom: 0;
+            left: 20vw;
+        }
+
+        img {
             width: 135%;
             height: 160%;
             object-fit: cover;
-          }
+
+            @include mobile {
+                width: 125%;
+                height: 128%;
+            }
+        }
     }
 
-    .sliding-text-container{
+    .sliding-text-container {
         position: absolute;
         font-size: 50vh;
         bottom: -120px;

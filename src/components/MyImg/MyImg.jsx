@@ -51,6 +51,7 @@ const MyImg = () => {
                     <motion.div variants={textVariants} className="buttons">
                         <motion.button>See Latest Work</motion.button>
                         <motion.button>Contact Me</motion.button>
+                        <motion.button className='resume'>Checkout Resume</motion.button>
                     </motion.div>
                     <motion.img variants={textVariants} src='/scroll.png' animate='scrollButton'></motion.img>
                 </motion.div>

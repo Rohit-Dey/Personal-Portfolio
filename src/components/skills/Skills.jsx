@@ -38,6 +38,10 @@ const Skills = () => {
                 <img src="/sass.png" alt="" />
                 <img src="/cpp.png" alt="" />
                 <img src="/python.png" alt="" />
+                <img src="/vs.png" alt="" />
+                <img src="/git.png" alt="" />
+                <img src="/github.png" alt="" />
+                <img src="/postman.png" alt="" />
             </motion.div>
             <motion.div variants={variants} className="text-container">
                 <h2>Currently Learning :</h2>
