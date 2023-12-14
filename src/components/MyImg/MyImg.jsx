@@ -49,8 +49,8 @@ const MyImg = () => {
                     <motion.h1 variants={textVariants}>Upcoming <span>S W E</span> Intern @</motion.h1>
                     <motion.img className='google' src='/google.png'></motion.img>
                     <motion.div variants={textVariants} className="buttons">
-                        <motion.button>See Latest Work</motion.button>
-                        <motion.button>Contact Me</motion.button>
+                        <a href='#Portfolio'><motion.button>See Latest Work</motion.button></a>
+                       <a href='#Contact'><motion.button>Contact Me</motion.button></a>
                         <a href='https://drive.google.com/file/d/12T_rN4umuUnPk1DRqPR0iekowzob3a63/view?usp=sharing'><motion.button className='resume'>Checkout Resume</motion.button></a>
                     </motion.div>
                     <motion.img variants={textVariants} src='/scroll.png' animate='scrollButton'></motion.img>
