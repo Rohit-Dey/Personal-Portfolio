@@ -31,7 +31,8 @@
             }
 
             h2 {
-                margin-top: -100px;
+                margin-top: -8%;
+                margin-right: 24%;
                 font-size: 30px;
                 color: #C683D7;
                 letter-spacing: 10px;
@@ -46,12 +47,13 @@
                 }
 
                 @include mobile {
-                    font-size: 36px;
+                    bottom: -20%;
+                    font-size: 32px;
+                    margin-right: 24vw;
                 }
             }
 
             .buttons {
-                z-index: 997;
 
                 button {
                     padding: 20px;
@@ -81,22 +83,30 @@
                         font-size: 14px;
                     }
                 }
+
+                @include mobile {
+                    margin-left: -22vw;
+                }
             }
 
             img {
                 width: 50px;
-            }
-
-            .google {
-                margin-top: -20%;
-                width: 90%;
-                margin-bottom: -12%;
 
                 @include mobile {
-                    top: unset;
-                    width: 70%;
+                    margin-right: 30vw;
                 }
             }
+
+            // .google {
+            //     margin-top: -20%;
+            //     width: 90%;
+            //     margin-bottom: -12%;
+
+            //     @include mobile {
+            //         top: unset;
+            //         width: 70%;
+            //     }
+            // }
         }
     }
 
@@ -121,20 +131,27 @@
             object-fit: cover;
 
             @include mobile {
-                width: 125%;
-                height: 128%;
+                width: 85vw;
+                height: 70vh;
+                margin-left: 10vw;
+                margin-top: -10vh;
             }
         }
     }
 
     .sliding-text-container {
         position: absolute;
-        font-size: 50vh;
-        bottom: -120px;
+        font-size: 70vh;
+        bottom: 2vh;
         white-space: nowrap;
         color: #ffffff09;
         width: 50%;
         font-weight: bold;
+
+        @include mobile {
+            font-size: 50vh;
+            bottom: 10vh;
+        }
     }
 
 }

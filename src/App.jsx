@@ -1,5 +1,5 @@
 import './app.scss'
-import MyImg from './components/MyImg/MyImg';
+import MyImg from './components/myImg/MyImg';
 import Contact from './components/contact/Contact';
 import Cursor from './components/cursor/Cursor';
 import Navbar from './components/navbar/Navbar';
